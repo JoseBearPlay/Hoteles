@@ -26,7 +26,7 @@ function registrarHotel(req, res){
         hotelModel.descripcionHotel = params.descripcionHotel;
         hotelModel.puntuacion = params.puntuacion;
         hotelModel.precioPorNoche = params.precioPorNoche,
-        
+        hotelModel.administrador = params.administrador
 
         
         hotelModel.save((err, hotelGuardado)=>{

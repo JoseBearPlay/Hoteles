@@ -9,7 +9,7 @@ var HotelSchema = Schema({
     descripcionHotel: String,
     puntuacion: String,
     precioPorNoche: Number,
-    administrador: {type: Schema.Types.ObjectId, ref: 'usuarios'}
+    administrador: {type: Schema.Types.String, ref: 'usuarios'}
 });
 
 module.exports = mongoose.model('hotel', HotelSchema);
